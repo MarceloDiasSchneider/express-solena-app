@@ -3,12 +3,13 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  console.log(req);
+  console.log('fist app express and srver linux vps');
   res.send('Hello World!')
 })
 
 app.post('/', (req, res) => {
-  res.send('Hello World!')
+  console.log('a post queste recive');
+  res.send('Hello World from express and vps!')
 })
 
 app.listen(port, () => {
